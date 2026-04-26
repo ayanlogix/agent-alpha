@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Alpha | Intelligence Command</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Space+Grotesk:wght@500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal-grid"></div>
+    
+    <main class="command-center">
+        <!-- Side Panel -->
+        <aside class="side-panel">
+            <div class="header">
+                <div class="status-orb"></div>
+                <h1>Agent Alpha</h1>
+            </div>
+
+            <div class="agent-stats">
+                <div class="stat-row"><span>Status</span><span class="val">Ready</span></div>
+                <div class="stat-row"><span>Logic Core</span><span class="val">Active</span></div>
+                <div class="stat-row"><span>Latency</span><span class="val">0.002ms</span></div>
+            </div>
+
+            <div class="tool-list">
+                <h3>Loaded Modules</h3>
+                <ul>
+                    <li><span class="tool-tag">SEC</span> Security Analysis</li>
+                    <li><span class="tool-tag">RAG</span> Neural Knowledge</li>
+                    <li><span class="tool-tag">CMD</span> Action Executor</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Terminal -->
+        <section class="main-terminal">
+            <header class="terminal-header">
+                <span>NEURAL_STREAM_v1.0.4</span>
+                <div>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </header>
+
+            <div class="input-hub">
+                <input type="text" id="taskInput" placeholder="Enter objective for Agent Alpha..." autocomplete="off">
+                <button id="launchBtn">Deploy Agent</button>
+            </div>
+
+            <div class="thought-stream" id="thoughtStream">
+                <div class="empty-msg">Agent standby. Enter task to initialize neural stream...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
